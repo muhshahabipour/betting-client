@@ -93,10 +93,14 @@ function Matches() {
                       result: "h",
                     });
                   }}
-                  className="bg-slate-100 text-gray-400 text-xs w-full p-3 rounded-lg text-center space-x-3 flex items-center justify-center"
+                  className={`${
+                    1 === 1
+                      ? "bg-orange-500 text-white"
+                      : "bg-slate-100 text-blue-700"
+                  } text-xs w-full p-1 rounded-lg text-center space-x-3 flex items-center justify-center`}
                 >
-                  <span>H</span>
-                  <span className="text-blue-700 text-sm font-bold">
+                  <span className="text-gray-300">H</span>
+                  <span className="text-sm font-bold">
                     {match.rates["h"] ? match.rates["h"].toFixed(2) : "∞"}
                   </span>
                 </button>
@@ -108,10 +112,14 @@ function Matches() {
                       result: "d",
                     });
                   }}
-                  className="bg-slate-100 text-gray-400 text-xs w-full p-3 rounded-lg text-center space-x-3 flex items-center justify-center"
+                  className={`${
+                    1 === 1
+                      ? "bg-orange-500 text-white"
+                      : "bg-slate-100 text-blue-700"
+                  } text-xs w-full p-1 rounded-lg text-center space-x-3 flex items-center justify-center`}
                 >
-                  <span>D</span>
-                  <span className="text-blue-700 text-sm font-bold">
+                  <span className="text-gray-300">D</span>
+                  <span className="text-sm font-bold">
                     {match.rates["d"] ? match.rates["d"].toFixed(2) : "∞"}
                   </span>
                 </button>
@@ -123,10 +131,14 @@ function Matches() {
                       result: "a",
                     });
                   }}
-                  className="bg-slate-100 text-gray-400 text-xs w-full p-3 rounded-lg text-center space-x-3 flex items-center justify-center"
+                  className={`${
+                    1 === 1
+                      ? "bg-orange-500 text-white"
+                      : "bg-slate-100 text-blue-700"
+                  } text-xs w-full p-1 rounded-lg text-center space-x-3 flex items-center justify-center`}
                 >
-                  <span>A</span>
-                  <span className="text-blue-700 text-sm font-bold">
+                  <span className="text-gray-300">A</span>
+                  <span className="text-sm font-bold">
                     {match.rates["a"] ? match.rates["a"].toFixed(2) : "∞"}
                   </span>
                 </button>
